@@ -1,0 +1,83 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Top Header */
+  .top-header {
+    background-color: #3ba379; /* Green background */
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  
+  .top-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    display: flex;
+    gap: 20px; /* Space between contact items */
+    align-items: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+  }
+  
+  .contact-item .icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1); /* Ensure white color for icons */
+  }
+  
+  /* Promo Text */
+  .promo {
+    flex: 1; /* Center promo text */
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-icons span {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .social-icons .social-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons .social-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+  }
+  
+  /* Mobile View */
+@media (max-width: 768px) {
+  .top-header {
+    display: none;
+    margin-right: 100px;
+  }
+}

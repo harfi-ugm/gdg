@@ -1,0 +1,33 @@
+/* Breadcrumb Container */
+.breadcrumb-container {
+  padding: 20px;
+  background-color: #FAFAFA; /* Light gray */
+  
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between items */
+  font-size: 16px;
+}
+
+.breadcrumb-item {
+  text-decoration: none;
+  color: #6c757d; /* Gray for non-active items */
+  font-weight: normal;
+}
+
+.breadcrumb-item.active {
+  color: #343a40; /* Darker gray for active item */
+  font-weight: bold;
+}
+
+.breadcrumb-separator {
+  color: #adb5bd; /* Lighter gray for separator */
+}
+
+.breadcrumb-item:hover {
+  text-decoration: underline;
+  color: #007bff; /* Blue on hover */
+}
